@@ -1,1 +1,61 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: stretch;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+header h1 {
+  padding: 2%;
+}
+
+main {
+  margin: 2%;
+}
+
+.search-result {
+  width: 100 vw;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.coctails {
+  width: 40vw;
+  padding: 2em;
+}
+.coctails #found-coctails {
+  margin-top: 2em;
+  text-align: start;
+}
+
+.details {
+  padding: 2em;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+.details img {
+  width: 50%;
+  align-self: center;
+}
+.details h3,
+.details img {
+  padding-bottom: 2em;
+}
+.details h4 {
+  padding-top: 2em;
+}
+.details ul {
+  align-self: flex-start;
+  list-style-position: inside;
+}/*# sourceMappingURL=style.css.map */

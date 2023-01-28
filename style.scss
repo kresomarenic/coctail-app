@@ -1,0 +1,72 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  //align-content: center;
+  height: 100vh;
+  align-items: stretch;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+header {
+  h1 {
+    padding: 2%;
+  }
+}
+
+main {
+  margin: 2%;
+}
+
+.search-result {
+  width: 100 vw;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.coctails {
+  //border: solid;
+  width: 40vw;
+  padding: 2em;
+
+  #found-coctails {
+    margin-top: 2em;
+    text-align: start;
+  }
+}
+
+.details {
+  //border: solid;
+  padding: 2em;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  //margin-left: 20%;
+
+  img {
+    width: 50%;
+    align-self: center;
+  }
+
+  h3,
+  img {
+    padding-bottom: 2em;
+  }
+
+  h4 {
+    padding-top: 2em;
+  }
+
+  ul {
+    align-self: flex-start;
+    list-style-position: inside;
+  }
+}
