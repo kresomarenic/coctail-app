@@ -15,9 +15,16 @@ body {
   text-align: center;
 }
 
+.active {
+  border-bottom: solid;
+  border-color: #d859e9;
+}
+
 header {
   h1 {
     padding: 2%;
+    letter-spacing: 0.3em;
+    color: #d859e9;
   }
 }
 
@@ -25,7 +32,26 @@ main {
   margin: 2%;
 }
 
+input {
+  padding: 0.5em;
+  padding-left: 1em;
+  width: 20%;
+  border-radius: 0.5em;
+}
+
+button {
+  padding: 0.5em;
+  width: 5%;
+  background-color: #d859e9;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
 .search-result {
+  //border: solid;
   width: 100 vw;
   margin-top: 3vh;
   display: flex;
@@ -33,26 +59,37 @@ main {
 }
 
 .coctails {
-  //border: solid;
-  width: 40vw;
+  border-right: solid;
+  border-color: #d859e9;
+  width: 20vw;
   padding: 2em;
 
   #found-coctails {
     margin-top: 2em;
     text-align: start;
+    //list-style-type: none;
+
+    li {
+      padding: 0.2em;
+
+      &:hover {
+        border-bottom: solid;
+        border-color: #d859e9;
+      }
+    }
   }
 }
 
 .details {
-  //border: solid;
+  //border-left: solid;
   padding: 2em;
-  width: 60vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   //margin-left: 20%;
 
   img {
-    width: 50%;
+    width: 30%;
     align-self: center;
   }
 
@@ -61,12 +98,18 @@ main {
     padding-bottom: 2em;
   }
 
+  div {
+    align-self: flex-start;
+    text-align: left;
+  }
+
   h4 {
     padding-top: 2em;
+    align-self: flex-start;
   }
 
   ul {
-    align-self: flex-start;
+    text-align: left;
     list-style-position: inside;
   }
 }
